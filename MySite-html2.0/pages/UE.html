@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Unreal Engine
+        </title>
+        <link rel="stylesheet" href="../CSS/styles.css">
+    </head>
+
+    <div class="container">
+        <div class="navBar">
+            <div class="left-side1">
+                
+                <div class="nav-link-wrapper1">
+                    <a href="projects.html"> Back </a>
+                </div>
+    
+                <div> UNREAL ENGINE PROJECTS </div>
+                <div class="logos-text">
+                    UE4
+                </div> <hr>
+                    
+            </div>
+             
+            <div class="right-side">
+                <div class="brand">
+                    <div> YIOKLING </div>
+                </div>
+            </div> 
+            
+        </div>
+
+        <div class="cs-subtitle">
+            <h2>
+                UNREAL ENGINE
+            </h2>
+            <div class="colab-text">
+                Unreal Engine Version 4.27
+            </div>
+            <div class="description-text">
+                <p>
+                    This year I took the challenge of learning how to use Unreal Engine 4, a game development tool, to create video games.
+                </p>
+            </div>
+        </div>
+
+        <!-- Code for collapsable button extracted from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+        <button type="button" class="collapse"><div class="button-text"> PHASE 1 </div></button>
+        <div class="content">
+            <p>
+                <b> FIRST PROJECT: </b><br><br>
+            </p>
+            <p>
+                I started by creating my first level. I created the room by making an empty box and positioning the player in the middle of the room. Then, I changed the texture of the floor, walls, and ceiling. Afterward, I wanted to make it cozier so I added some furniture. For this, I had to move around different views to position the furniture in the right place (making sure it was not in the air not inside the floor). For an additional touch, I added a statue (which I changed the material to gold) and a picture to the wall (which I had to import, position, and scale).
+            </p>
+            <div class="image-wrapper3">
+                <img src="../images/projects/Unreal/first-project.png" alt="" class="img3"> 
+            </div>
+        </div>
+
+        <button type="button" class="collapse"><div class="button-text"> PHASE 2 </div></button>
+        <div class="content">
+            <p>
+                <b> SECOND PROJECT: </b><br><br>
+            </p>
+            <p>
+                For the second project, I designed a more elaborated level. This level has stairs, a second floor, windows, doors, as well as a space for a future elevator, as well as lights. 
+            </p>
+            <p>
+                <b>First,</b> I started by creating a ground, big enough for a building. Then I created 3 hollow boxes, one for the main room, a one for each side (East and West).<br>
+                <b>Second,</b> I placed the stairs, in the desired position and leading to the second floor. Next, I created the second floor in each room by placing a box and changing the scale. I adjusted the stairs and floor to match. After, I made the space for the elevator. <br>
+                <b>Third,</b> It was time to make the cutouts for the doors and windows. For this, I used the box brush but with the subtractive attribute.<br>
+                <b>Fourth,</b> I changed the texture of the interior and exterior walls and floor, as well as the ceilings and the elevator cutout.<br>
+                <b>Fifth,</b> Time to decorate! I added a door frame, a glass window (to be the door), and a handle (which I attached to said door). This was made this way so afterward the can be sliding doors.  For the interior doors, I used a regular door with a door frame. Then, I placed the windows with their frames.<br>
+                <b>Finally,</b> adding the lights. I added point lights for all the interior lightning and light sources for the exterior light (all pointing to the building).
+            </p>
+            <div class="image-wrapper3">
+                <img src="../images/projects/Unreal/phase2.jpg" alt="" class="img3"> 
+            </div>
+        </div>
+
+        <button type="button" class="collapse"><div class="button-text"> PHASE 3 </div></button>
+        <div class="content">
+            <p>
+                <b> GETTING FAMILIAR WITH BLUEPRINT: </b><br><br>
+            </p>
+            <p>
+                For this phase, I am getting familiar with the visual programming used in UE. Thus, getting familiar with the blueprint editor.<br>
+                Here I learned how to make different functions, translating java code into this visual format. <br>
+                Event graph is often used as the main method, that calls other functions. Therefore, you make other functions and then connect them on the event graph, where event BeginPlay is. <br>
+                Here I learned there are all the available types (int, booleans, float, etc) and different math functions like addition, subtraction, etc. You can have returns, as well as print statements. In this phase I went around playing with different methods I could create, I used if statements, loops, and nested loops.<br>
+            </p>
+            <div class="image-wrapper3">
+                <img src="../images/projects/Unreal/forloop2.png" alt="" class="img3"> 
+            </div>
+        </div>
+        <button type="button" class="collapse"><div class="button-text"> PHASE 4 </div></button>
+        <div class="content">
+            <p>
+                <b> THIRD PROJECT: </b><br><br>
+            </p>
+            <p>
+                For this project I return to the sophisticated level design I did on phase 2 and added functionality plus landscape. <br>
+                As I mentioned on phase 2, the main doors are going to be sliding doors, for me to do this I found that a trigger box was the option. When the character steps into this box the doors open, and when the character steps out the close automatically. Hence, I placed a trigger box bigger and wider than the main entrance doors, and opened the blueprint editor. <br>
+                <b> First, </b> I started by adding a timeline to control for how long the door should move to open. Thus, I added a timeline with a vector track (to keep track of the object's movement, in this case the doors) for each door. <br>
+                <b> Second, </b> I established the doors location. For this vector variables were used, as well as, getActorLocation action. This, to defined variables and stored the location of all four glass doors. <br>
+                <b> Third, </b> it was time to make the trigger boxes work (when character enters trigger box do something, in this case open the doors). So, the values from the vectors (on the timeline) were used to add/subtract from the location of one of the doors to update its location along the timeline’s timing. Now the doors work! <br>
+                <b>Finally,</b> for the landscaping I used the landscape mode to create mountains and valleys. In addition, I used "Water Planes" (a water mesh), and "Landscape Pro 2.0 Auto-Generated Material" for the trees and bushes. <br>
+            </p>
+            <div class="image-wrapper3">
+                <img src="../images/projects/Unreal/doors-blueprint.png" alt="" class="img3"> 
+            </div>
+            <div class="image-wrapper3">
+                <img src="../images/projects/Unreal/vector.png" alt="" class="img3"> 
+            </div>
+        </div>
+
+        <button type="button" class="collapse"><div class="button-text"> PHASE 5 </div></button>
+        <div class="content">
+            <p>
+                <u><b> FINAL VIDEO: </b></u>
+            </p>
+            <div class="video-wrapper2">
+                <video width="700" height="800" autoplay muted>
+                    <source src="../Images/projects/Unreal/UE-video.mov" type="video/mp4">
+                </video> 
+            </div>
+
+            <p>
+                <u><b> FINAL VIEW: </b></u>
+            </p>
+            <div class="image-wrapper3">
+                <img src="../images/projects/Unreal/final-view.png" alt="" class="img3"> 
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapse");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+        
+    </div>
+
+    
+
+    
+
+</html>
