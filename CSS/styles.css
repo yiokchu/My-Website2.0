@@ -1,0 +1,610 @@
+/*Master Styles*/
+body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Nav Styles*/
+.navBar {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.navBar > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+    /* inside the wrapper just grab the a link*/
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/*Title*/
+.title-wrapper {
+    top:75px;
+    width:100%;
+    height:100px;
+    color:white;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: black;
+    font-family: "Garamond";
+    text-align:center;
+}
+
+/*Welcome Container*/
+.welcome-wrapper{
+    top:175px;
+    width:100%;
+    height:300px;
+    color:white;
+    position:absolute;
+    background-color: #EFF0F0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.left-side {
+    padding: 38px;
+}
+.subtitle {
+    color: black;
+}
+
+.welcome-text {
+    color: black;
+}
+
+.right-side {
+    height:300px;
+    padding: 7px;
+}
+
+.image-wrapper {
+    margin-left: 1in;
+}
+
+.image-wrapper2 {
+    margin-left: 1px;
+}
+
+.image-wrapper3 {
+    margin-left: 3in;
+}
+
+.img {
+    width: 200px;
+    height:280px;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.img1 {
+    width: 250px;
+    height:280px;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.img2 {
+    width: 300px;
+    height:330px;
+}
+
+.img5 {
+    width: 300px;
+    height:200px;
+    margin-top: 1in;
+    margin-left: -60px;
+}
+
+/*Portfolio Container*/
+.portfolios-wrapper {
+    top:475px;
+    width:100%;
+    height:350px;
+    color:white;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+    padding: 38px;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 65px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .portfolio-text {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .portfolio-text {
+    font-weight: 600;
+    color: grey;
+}
+
+/*Bottom Info Container*/
+.bottom-wrapper {
+    top:900px;
+    width:100%;
+    height:300px;
+    color:white;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDC2C3;
+    font-weight: 500;
+}
+
+.contact-box {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid #878B8B;
+    margin: 0;
+    background-color: #878B8B;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 465px;
+    margin-top: 50px;
+}
+
+.contact-wrapper {
+    margin-top: 40px;
+    margin-left: 555px;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    display: flex;
+}
+
+.contact-text {
+    color: white;
+    text-decoration: none;
+}
+
+.img-logo {
+    width: 5px;
+    height: 10px;
+}
+
+/*Back Container */
+.navBar > .left-side1 > div {
+    margin-right: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper1 {
+    height: 25px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper1 a{
+    /* inside the wrapper just grab the a link*/
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper1:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper1 a:hover {
+    color: black;
+}
+
+/*Art Portfolio*/
+.art-portfolios-wrapper {
+    z-index: 1;
+    top:110px;
+    width:100%;
+    height:350px;
+    color:white;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.art-portfolio-item-wrapper {
+    position: relative;
+    padding: 38px;
+}
+
+.art-portfolio-img-background {
+    height: 200px;
+    width: 80%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.art-portfolio-text1 {
+    margin-left: -80px;
+    margin-top: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+.art-portfolio-text1 a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.art-portfolio-text1 a:hover {
+    color: black;
+}
+
+/*lOGOS Page*/
+.logos-text{
+    color: black;
+    margin-top: 5px;
+
+}
+
+/*CS Portfolio*/
+.cs-portfolios-wrapper {
+    z-index: 1;
+    top:100px;
+    width:100%;
+    height:350px;
+    color:white;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cs-portfolio-item-wrapper {
+    position: relative;
+    padding: 38px;
+}
+
+.cs-portfolio-img-background {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.cs-portfolio-text1 {
+    margin-left: -80px;
+    margin-top: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+.cs-portfolio-text1 a{
+    color: black;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.cs-portfolio-text1 a:hover {
+    color: black;
+}
+
+/*Slideshow*/
+/*Extracted from Programming a slideshow with HTML and CSS, geeksforgeeks.org */
+.slideshow-container {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+.slide2 {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+   
+/* Add animation to the slides */
+.slide-wrapper {
+  /* Calculate the total width on the basis of number of slides */
+    width: calc(728px * 2);
+   
+  /* Specify the animation with the duration and speed */
+    animation: slide 20s ease infinite;
+  }
+
+.slide-wrapper2 {
+    /* Calculate the total width on the basis of number of slides */
+      width: calc(728px * 3);
+     
+    /* Specify the animation with the duration and speed */
+      animation: slide2 20s ease infinite;
+    }
+
+/* Define the animation for the slideshow */
+@keyframes slide {   
+  /* Calculate the margin-left for each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+}
+
+/* Define the animation for the slideshow */
+@keyframes slide2 {   
+    /* Calculate the margin-left for each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-728px * 1);
+      }
+  
+      60% {
+          margin-left: calc(-728px * 2);
+        }
+  }
+
+.cs-portfolio-img-background2 {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.cs-subtitle {
+    color: black;
+    top:100px;
+    width:100%;
+    height:100px;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Description text*/
+.description-text {
+    color: black;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align:center;
+}
+
+.description-text2 {
+    color: black;
+    padding: 40px;
+    text-align:center;
+    padding-top: 220px;
+}
+
+.description-text3 {
+    color: black;
+    padding: 40px;
+    text-align: justify;
+}
+
+.description-text4 {
+    color: black;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.description-text5 {
+    color: black;
+    padding: 40px;
+    text-align: justify;
+    margin-left: -1in;
+}
+
+.colab-text {
+    color: gray;
+    padding-top: 10px;
+}
+
+/*Prototype*/
+.proto-wrapper{
+    top: 950px;
+    width:100%;
+    height:700px;
+    color:white;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.proto-wrapper2{
+    top: 1300px;
+    width:100%;
+    height:700px;
+    color:white;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img3 {
+    width: 700px;
+    height:500px;
+}
+
+.image-wrapper2 {
+    margin-left: 0.5in;
+}
+
+.video-wrapper{
+    margin-top: -1.5in;
+}
+
+.video-wrapper2{
+    margin-top: -1.5in;
+    margin-left: 3in;
+}
+
+.video-wrapper3{
+    margin-top: 1in;
+}
+
+/*Python Project*/
+.project-wrapper{
+    top:175px;
+    width:100%;
+    height:1100px;
+    color:white;
+    position:absolute;
+    background-color: #EFF0F0;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+
+.left-side1 {
+    padding: 38px;
+}
+
+.middle-side {
+    height:300px;
+    padding: 7px;
+    padding-top: 1in;
+    margin-left: -1in;
+}
+
+.right-side1 {
+    height:300px;
+    padding: 7px;
+    padding-top: 1in;
+    margin-left: -1in;
+}
+
+.img4 {
+    width: 250px;
+    height: 250px;
+    padding-bottom: .5in;
+}
+
+/*Collapsable Button*/
+.collapsee {
+    background-color: #f0efeb;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+}
+
+.button-text {
+    font-size: 30px;
+    color:gray;
+}
+  
+.active, .collapse:hover {
+    background-color: #CED2D2;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #EFF0F0;
+}
+
+/*about wrapper*/
+.about-wrapper {
+    top:75px;
+    width:95%;
+    height:60px;
+    color:white;
+    position:absolute;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    padding: 38px;
+}
+
+.about-text {
+    color: black;
+    font-size: 18px;
+}
