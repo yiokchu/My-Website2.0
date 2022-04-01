@@ -289,6 +289,15 @@ body {
     box-shadow: 10px 10px 5px lightgrey;
 }
 
+.art-portfolio-img-background2{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -6ch;
+}
+
 .art-portfolio-text1 {
     margin-left: -80px;
     margin-top: 25px;
@@ -607,4 +616,17 @@ body {
 .about-text {
     color: black;
     font-size: 18px;
+    text-align: left;
 }
+
+.about-column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+.about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
