@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title> Phyton Projects </title>
+    </head>
+    
+    <div class="container">
+        <!-- Use the header area for the website name or logo -->
+            <header>
+                <!-- <a href="index.html"> <img src="" alt="Yiokling Chu Garcia Logo" height="70" width="150" align="right" ></a>-->
+                <a href="index.html"> <img src="Images/art-port/empty-png.png" alt="Yiokling Chu Garcia Logo" height="70" width="150" align="right" >
+            </header>
+
+			<!-- Use the nav area to add hyperlinks to other pages within the website -->
+			<nav style="background-color: #8DA3D3;">
+				<ul>
+					<li> <a href="index.html"> Home </a></li>
+					<li> <a href="about.html"> About </a></li>
+					<li> <a href="contact.html"> Contact </a></li>
+				</ul>
+                <ul style="color: #FFFFFF; margin-top: -.6em;">
+                    <li> PROJECTS</li>
+                </ul>
+                <ul style="color: #FFFFFF; margin-top: -.6em;">
+                    <li> <a href="projects.html"> &lt; BACK </li> </a> </li>
+                </ul>
+			</nav>
+
+			<!-- Use the main area to add the main content of the webpage --> 
+			<main>
+        
+                <div class="title" style="margin-top: 2em; font-size: 2em;">
+                    PHYTON PROJECTS
+                </div>
+
+			</main>
+
+            <section style="margin-top: 2em; align-items: center; text-align: center;">
+                <p style="border-left: none; margin-left: 1em; margin-right: 1em;">
+                    Since Python is highly versatile, here are some projects where Python is used for small and complex tasks. The following projects helped me sharpen my skills with Python, useful since is used across many different industries
+                </p>
+                
+            </section>
+
+            <section style="margin-top: 2em;">
+            <!-- Code for collapsable button extracted from: https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+                <button type="button" class="collapse"><div class="button-text"> PROJECT 1</div></button>
+                <div class="content" style="padding: 1em;">
+                    <p>
+                        <b> ONLINE PHONE BOOK: </b><br><br>
+                    </p>
+                    <p>
+                        This is a network application that manages an online phone directory. In this program, the phone book's data model is saved in a file on the server's computer. The customers are able to look up a phone number or add a name+phone number to the directory. In addition, the server is able to handle multiple clients with all clients having access to the same phone book. This object is created by the server at startup and passed to the client handlers.
+                    </p>
+                    <p>
+                        The program runs the following way: the client sends a connection request to the server, the server creates a socket and binds it to the address (host, port). The port numbers are the same (5000) therefore they connect, if they were different, it would give an error. <br>
+                        The finding and adding a person’s number or person's name works since the methods send the server the coded name or coded name+phone number. Then, the server class calls the PhoneClientHandler to add or find the person. The handler decodes the data (message), and sends a reply if the number was found or not (using the get/add methods defined in phonebook), or if the name and number were added to the client (coded). Finally, the reply (message) is displayed to the client by the phonebookclient. Then to disconnect, the client closes the connection with the server (If the client does not connect, the server just waits for connection). 
+                    </p>
+                    <p>
+                        <a href="https://github.com/yiokchu/Computer-Networking"> <u>Take a look at the code</u></a>    
+                    </p>
+
+                    <div class="art-port-section" style="margin-top: 1em; text-align:center;">
+                        <div class="about-column">
+                            <a href="images/projects/connect.png"> 
+                                <img src="images/projects/connect.png" alt="Python Phone Book Connect">
+                            </a>
+                        </div>
+                        <div class="about-column">
+                            <a href="images/projects/add.png"> 
+                                <img src="images/projects/add.png" alt="Python Phone Book Add">
+                            </a>
+                        </div>
+                        <div class="about-column">
+                            <a href="images/projects/found.png"> 
+                                <img src="images/projects/found.png" alt="Python Phone Book Found">
+                            </a>
+                        </div>
+
+                        <div class="about-column">
+                            <img src="Images/art-port/empty-png.png" alt="" style="width: 2em;"> 
+                        </div>
+                        <div class="about-column">
+                            <img src="Images/art-port/empty-png.png" alt="" style="width: 2em;"> 
+                        </div>
+
+                        <div class="about-column">
+                            <a href="images/projects/welcome.png"> 
+                                <img src="images/projects/welcome.png" alt="Python Phone Book Welcome">
+                            </a>
+                        </div>
+                        <div class="about-column">
+                            <a href="images/projects/addnum.png"> 
+                                <img src="images/projects/addnum.png" alt="Python Phone Book Add Num">
+                            </a>
+                        </div>
+                        <div class="about-column">
+                            <a href="images/projects/not-found.png"> 
+                                <img src="images/projects/not-found.png" alt="Python Phone Book Not Found">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <script>
+                    var coll = document.getElementsByClassName("collapse");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                        content.style.display = "none";
+                        } else {
+                        content.style.display = "block";
+                        }
+                    });
+                    }
+                </script>
+            </section>
+            
+    </div>
+
+</html>

@@ -1,0 +1,511 @@
+/* Style sheet created by: Yiokling Chu */
+/* COLORS: 
+    #B6CCFE - light purple
+    #F6E1AE - yellow
+    #8DA3D3 - dark purple
+    #302E41 - text color (almost black)
+*/
+
+/* Style for container centers the page and sets the element width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for header specifies top and bottom margins, background color to white, and alignment */
+header {
+	margin-top: 0.2em;
+	background-color: #B6CCFE;
+	text-align: center; 
+}
+
+/* Style for the nav specifies text properties */
+nav {
+	font-family: "Georgia", "Times New Roman", sans-serif;
+	font-size: 0.9em; 
+	font-weight: bold; 
+	justify-content: space-between;
+	text-transform: uppercase;
+    text-align: left;
+    background-color: #B6CCFE; 
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+	padding: 0.5em;
+	margin-top: 0em; 
+	margin-bottom: 0em;
+}
+
+/* Style for nav li */
+nav li { 
+	list-style-type: none;
+	padding: 0.4em;
+	display: inline-block;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Style changes navigation link text color to orange when hover */
+nav li a:hover {
+	color: #302E41;
+    transition: color 0.5s;
+}
+
+/* Style for the background triangle*/
+.triangle h1, .triangle2 h1, .triangle4 h1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 6em;
+    text-shadow: 0.05em 0.03em 0.03em #617299;
+    color: #FFFFFF;
+    margin-top: -.05em;
+}
+
+/* Style for the background triangle figure*/
+.triangle {
+    width: device-width;
+    height: 28em;
+    background-image:
+      linear-gradient(to top right, transparent 50%, #B6CCFE 0),
+      linear-gradient(to bottom right, #B6CCFE 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style for the background triangle figure*/
+.triangle2 {
+    width: device-width;
+    height: 28em;
+    background-image:
+      linear-gradient(to top right, transparent 50%, #B6CCFE 0),
+      linear-gradient(to bottom right, #B6CCFE 100%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style for the background triangle figure*/
+.triangle3 {
+    width: device-width;
+    height: 28em;
+    background-image:
+      linear-gradient(to top right, transparent 100%, #B6CCFE 0),
+      linear-gradient(to bottom left, #B6CCFE 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style for the background triangle figure*/
+.triangle4 {
+    width: device-width;
+    height: 28em;
+    background-image:
+      linear-gradient(to top right, transparent 0%, #B6CCFE 0),
+      linear-gradient(to bottom right, #B6CCFE 50%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style for the background triangle figure*/
+.triangle5 {
+    width: device-width;
+    height: 28em;
+    background-image:
+      linear-gradient(to top left, transparent 50%, #B6CCFE 0),
+      linear-gradient(to bottom left, #B6CCFE 0%, transparent 0);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style to create a fluid image */
+img {
+	max-width: 60%;
+    max-height: 60%;
+}
+
+/* Style for main specifies text properties and margins*/
+main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style for paragraphs in main*/
+main p {
+    text-align: center;
+    border-left: 0.1em solid #302E41;
+    margin-top: 7em;
+    margin-left: 3em 40em;
+}
+
+/* Style for list in main*/
+main li { 
+	background-color: #8DA3D3; 
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 2% 40%;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+main li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*Style section*/
+section, .cs-port-section, .art-port-section {
+	display: block;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1em;
+	margin-top: -7em; 
+	padding: 1em;
+	align-items: center;
+	justify-content: center;
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+/*Style CS Portfolio section*/
+.cs-port-section img{
+    height: 70%;
+    width: 70%;
+    box-shadow: 0.625em 0.625em 0.3125em lightgrey;
+    margin-left: 7%;
+}
+
+/*Style text of CS portfolio section*/
+.port-text{
+    font-size:1em;
+    font-weight: 800;
+    margin-top: 1.5em;
+}
+
+/*Style text of CS portfolio section*/
+.port-text2{
+    width: 50%;
+    font-size:.9em;
+    margin-left: 10.5em;
+    margin-top: 1em;
+}
+
+/*Clearing table layout after section*/
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Style about column*/
+.about-column {
+    float: left;
+    width: 33.33%;
+}
+
+/*Style cs main column*/
+.cs-port-column {
+    float: left;
+    width: 50%;
+}
+
+/*Style for square*/
+.square {
+    height: 70%;
+    width: 70%;
+    background-color: #F6E1AE;
+    box-shadow: 0.625em 0.625em 0.3125em lightgrey;
+    margin-left: 7%;
+}
+
+/*Style for square text*/
+.square .portfolio-text {
+    transition: 1s;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50% 0;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+.square .portfolio-text a {
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*Style for square text*/
+.square:hover .portfolio-text {
+    font-weight: 600;
+    color: #302E41;
+}
+
+/* Style for footer*/
+footer {
+	font-size:0.9em;
+	text-align: center; 
+	margin-top: 2em;
+	background-color: #B6CCFE;
+	border-top: solid 0.2em #B6CCFE;
+	border-bottom: solid 0.2em #B6CCFE;
+	color: #FFFFFF;
+    align-items: center;
+	justify-content: center;
+    text-align: center;
+    padding: 2%;
+}
+
+/* Style for footer achor*/
+footer a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*Style for contact text*/
+.contact-text{
+    color: #302E41;
+}
+
+/*Style for contact text hyperlink*/
+.contact-text a{
+    color: #302E41;;
+	text-decoration: none;
+    font-size: x-large;
+}
+
+/*Experience Section*/
+* {
+    box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+ /* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #8DA3D3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+  
+/* Container around content */
+.exp-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: white;
+    width: 50%;
+}
+  
+/* The circles on the timeline */
+.exp-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #F6E1AE;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+  
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+  
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #B6CCFE;
+}
+  
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #B6CCFE transparent transparent;
+}
+  
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+  
+/* The actual content */
+.contentT {
+    padding: 20px 30px;
+    background-color: #B6CCFE;
+    position: relative;
+    border-radius: 6px;
+}
+
+.title {
+    color: #302E41 ;
+    font-size: 3em;
+}
+
+.functionalities ul li{
+    color: black;
+	list-style-type: circle;
+    list-style-position: inside;
+
+}
+
+/*Slideshow*/
+/*Extracted from Programming a slideshow with HTML and CSS, geeksforgeeks.org */
+.slideshow-container {
+    overflow: hidden;
+    height: 510px;
+    width: 45em;
+    margin: 0 auto;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 45em;
+}
+   
+.slide-wrapper {
+    /* Calculate the total width on the basis of number of slides */
+      width: calc(45em * 3);
+     
+    /* Specify the animation with the duration and speed */
+      animation: slide 20s ease infinite;
+}
+
+/* Define the animation for the slideshow */
+@keyframes slide {   
+    /* Calculate the margin-left for each of the slides */
+      20% {
+        margin-left: 0px;
+      }
+     
+      40% {
+        margin-left: calc(-45em * 1);
+      }
+  }
+
+.cs-portfolio-img-background2 {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+/*Collapsable Button*/
+.collapsee {
+    background-color: #f0efeb;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 30px;
+}
+
+.button-text {
+    font-size: 30px;
+    color:gray;
+}
+  
+.active, .collapse:hover {
+    background-color: #CED2D2;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #EFF0F0;
+}
+
+/* Style rule for form element */
+form {
+    padding: 1em; 
+    padding-left: 25%;
+}
+
+/* Style rule for paragraph with form element */
+form p {
+    color: #000000;
+}
+
+/* Style rule for input, select, and textarea form elements */
+input, textarea { 
+	display: block; 
+	margin-bottom: 1em;
+}
+
+/* Style rule for label element */
+label {
+	display: block;
+    float: left; 
+    padding-right: 0.5em;
+    text-align: right;
+    width: 10em;
+}

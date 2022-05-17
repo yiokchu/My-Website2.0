@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title> Contact </title>
+    </head>
+    
+    <div class="container">
+        <!-- Use the header area for the website name or logo -->
+            <header>
+                <!-- <a href="index.html"> <img src="" alt="Yiokling Chu Garcia Logo" height="70" width="150" align="right" ></a>-->
+                <a href="index.html"> <img src="Images/art-port/empty-png.png" alt="Yiokling Chu Garcia Logo" height="70" width="150" align="right" >
+            </header>
+
+			<!-- Use the nav area to add hyperlinks to other pages within the website -->
+			<nav>
+				<ul>
+					<li> <a href="index.html"> Home </a></li>
+					<li> <a href="about.html"> About </a></li>
+					<li> <a href="contact.html"> Contact </a></li>
+				</ul>
+			</nav>
+
+			<!-- Use the main area to add the main content of the webpage --> 
+			<main>
+				<div class="triangle4">
+                    <img src="images/contact-image.svg" alt="Illustration of Girl" style="margin-left: 8em; margin-top: 2em"> 
+                    <h1 style="font-family: 'Brush Script MT', cursive; margin-bottom: -.5em;"> Contact </h1>
+                    <h1 style="font-family: 'Brush Script MT', cursive"> Me!</h1>
+                </div>
+
+                <div class="triangle5">
+                    
+                </div>
+
+                <p style="margin-top: -25%">
+                    <div class="contact-text">
+                        <a href="mailto:yc94652n@pace.edu"> <b>Email:</b> yc94652n@pace.edu </a> <br>
+                        <a href="https://www.linkedin.com/in/yioklingchugarcia"> <b>LinkedIn:</b> yioklingchugarcia</a> <br>
+                        <a href="https://github.com/yiokchu?tab=repositories"> <b>Github:</b> yiokchu </a> <br>
+                    </div>
+                </p>
+
+                <h2>Get In Touch!</h2>
+				
+				<form action="mailto:yc94652n@pace.edu" method="POST"><!-- Start Form -->
+					<label for="fName">First Name:</label>
+					<input type="text" name="fName" id="fName">
+					
+					<label for="lName">Last Name:</label>
+					<input type="text" name="lName" id="lName"> 
+					
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
+					
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone">
+					
+					<label for="questions"> Message: </label>
+					<textarea id="questions" name="questions" rows="3" cols="25"></textarea>
+					
+					<input type="submit" id="submit" value ="Send" class="btn">
+					<input type="reset" id="reset" value="Reset" class="btn">
+				</form>
+			</main>
+
+    </div>
+
+</html>

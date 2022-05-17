@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <title> HERA </title>
+    </head>
+    
+    <div class="container">
+        <!-- Use the header area for the website name or logo -->
+            <header>
+                <!-- <a href="index.html"> <img src="" alt="Yiokling Chu Garcia Logo" height="70" width="150" align="right" ></a>-->
+                <a href="index.html"> <img src="Images/art-port/empty-png.png" alt="Yiokling Chu Garcia Logo" height="70" width="150" align="right" >
+            </header>
+
+			<!-- Use the nav area to add hyperlinks to other pages within the website -->
+			<nav style="background-color: #8DA3D3;">
+				<ul>
+					<li> <a href="index.html"> Home </a></li>
+					<li> <a href="about.html"> About </a></li>
+					<li> <a href="contact.html"> Contact </a></li>
+				</ul>
+                <ul style="color: #FFFFFF; margin-top: -.6em;">
+                    <li> CS PORTFOLIO</li>
+                </ul>
+                <ul style="color: #FFFFFF; margin-top: -.6em;">
+                    <li> <a href="csportfolio.html"> &lt; BACK </li> </a> </li>
+                </ul>
+			</nav>
+
+			<!-- Use the main area to add the main content of the webpage --> 
+			<main>
+        
+                <div class="title">
+                    HERA
+                </div>
+                <p style="margin-top: 1em;"> Team: Yiokling Chu, Manuel Garza, Kyle Bittner. </p>
+          
+			</main>
+
+            <section style="margin-top: 2em;">
+                <p style="border-left: none; margin-left: 1em; margin-right: 1em;">
+                    Hera is a pill reminder app I made in collaboration with a team. HERA keeps people on track of their medication and prescriptions with daily reminders. This app helps people that tend to neglect doctor's orders. Hera assists people to manage to keep their number of medications straight.
+                </p>
+                
+                <div class="functionalities">
+                    <ul>
+                        Some of Hera's functionality are: <br><br>
+                        <li> HERA allows you to create any type of recurring reminders (daily, weekly, monthly, every X days). </li>
+                        <li> HERA tracks the remaining quantity of each medication and shows a refill alert when running low. </li>
+                        <li> HERA provides missed medication alerts. </li>
+                    </ul>
+                </div>
+                &nbsp;
+                <p>
+                    <h3>APP PROCESS: </h3>
+                </p>
+                
+                <div class="slideshow-container">
+                    <div class="slide-wrapper">
+                        <div class="slide">
+                            <div class="cs-portfolio-img-background2" style="background-image:url(images/cs-port/Prototype1.png)"></div>
+                        </div>
+        
+                        <div class="slide">
+                            <div class="cs-portfolio-img-background2" style="background-image:url(images/cs-port/Prototype2.png)"></div>
+                        </div>
+        
+                        <div class="slide">
+                            <div class="cs-portfolio-img-background2" style="background-image:url(images/cs-port/Prototype3.png)"></div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="cs-port-section" style="margin-top: .5em;">
+                    <div class="cs-port-column">
+                        <video width="100%" height="100%" autoplay muted>
+                            <source src="media/Hera-prototype.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                    <div class="cs-port-column">
+                        <p style="margin-left: 1em;">
+                            <b><i><u>PROTOTYPE: </u></i></b><br><br>
+                            Hera's first prototype was made using Figma, we tried to add all the functionalities and basic layout closest to want we wanted the final product to look like. <br> 
+                        </p>
+                        <br>
+                        <p style="margin-left: 1em;">
+                            <b><i><u>DEVELOPMENT: </u></i></b><br><br>
+                            In order to develop Hera, we used React Native, and code with JavaScript.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="cs-port-column">
+                        <p>
+                            <b><i><u>FINAL APP: </u></i></b><br><br>
+                            Hera is linked to a Firebase database. It has the user input a name for the medication, a recurrence (time and if daily/weekly/monthly), and for how long. Then, the algorithm sets a reminder for the specific medication which holds the recurrence and time limit.<br><br>
+                            There are two main parts for Hera. Hera is the front-end react-native app and Ares is a redux-thunk middleware application that holds functions and database calls.
+                        </p>
+                        <p>
+                            <a href="https://github.com/kbittner15/Hera.git"> <u>Take a look at the code</u></a>    
+                        </p>
+                    </div>
+                    <div class="cs-port-column">
+                        <video width="50%" height="50%" autoplay muted>
+                            <source src="media/Hera-video.mp4" type="video/mp4">
+                        </video> 
+                    </div>
+                </div>
+            </section>
+            
+    </div>
+
+</html>
